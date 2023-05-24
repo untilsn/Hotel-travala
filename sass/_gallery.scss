@@ -1,0 +1,41 @@
+.wrapper {
+  .container {
+    .slider {
+      margin-top: 50px;
+      .swiper-wrapper {
+        .img {
+          img {
+            // margin: 0 auto;
+            // border-radius: 12px;
+            // max-width: 700px;
+            // max-height: 500px;
+            // object-fit: cover;
+            height: 30rem;
+            width: 50rem;
+            border-radius: 0.5rem;
+            object-fit: cover;
+            margin-bottom: 4rem;
+            user-select: none;
+            margin: 0 auto;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 415px) {
+  .wrapper {
+    .container {
+      .slider {
+        .swiper-wrapper {
+          .img {
+            img {
+              height: 25rem;
+              width: 30rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}

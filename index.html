@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/232aed5428.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+
+    <title>Hotel wed design js</title>
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <section id="header" class="header">
+        <div class="container">
+          <div class="top">
+            <h1>Hotels And Resorts</h1>
+            <a class="button" href="#">Check Avaiablability</a>
+            <span class="navigation-btn">
+              <i class="fa-solid fa-bars"></i>
+            </span>
+          </div>
+          <div class="navigation">
+            <span class="navigation-close">
+              <i class="fa-solid fa-xmark"></i>
+            </span>
+            <div class="navigation-list">
+              <a href="#header">Home</a>
+              <a href="#about">About</a>
+              <a href="#services">Reservation</a>
+              <a href="#gallery">Gallery</a>
+              <a href="#contact">Contact</a>
+              <a href="#review">Reviews</a>
+            </div>
+          </div>
+          <div class="mid">
+            <div class="swiper home-slider">
+              <div class="swiper-wrapper">
+                <div class="box swiper-slide">
+                  <img src="images/home-img-1.jpg" alt="" />
+                  <div class="flex">
+                    <h3>luxurious rooms</h3>
+                    <a href="#availability" class="btn">check availability</a>
+                  </div>
+                </div>
+
+                <div class="box swiper-slide">
+                  <img src="images/home-img-2.jpg" alt="" />
+                  <div class="flex">
+                    <h3>foods and drinks</h3>
+                    <a href="#reservation" class="btn">make a reservation</a>
+                  </div>
+                </div>
+
+                <div class="box swiper-slide">
+                  <img src="images/home-img-3.jpg" alt="" />
+                  <div class="flex">
+                    <h3>luxurious halls</h3>
+                    <a href="#contact" class="btn">contact us</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+            </div>
+          </div>
+          <div class="overlay"></div>
+        </div>
+      </section>
+      <!-- avaiablability -->
+      <section class="avaiable">
+        <div class="container">
+          <div class="choice-list">
+            <div class="item item-input">
+              <h1 class="title">check in*</h1>
+              <input type="date" placeholder="mm/dd/yy" id="" />
+            </div>
+            <div class="item item-input">
+              <h1 class="title">check out*</h1>
+              <input type="date" placeholder="mm/dd/yy" id="" />
+            </div>
+            <div class="item item-box">
+              <h1 class="title">adults*</h1>
+              <select>
+                <option value="0">1 adult</option>
+                <option value="1">2 adult</option>
+                <option value="2">3 adult</option>
+                <option value="3">4 adult</option>
+                <option value="4">5 adult</option>
+              </select>
+            </div>
+            <div class="item item-box">
+              <h1 class="title">adults*</h1>
+              <select>
+                <option value="0">1 child</option>
+                <option value="1">2 child</option>
+                <option value="2">3 child</option>
+                <option value="3">4 child</option>
+                <option value="4">5 child</option>
+              </select>
+            </div>
+            <div class="item item-box">
+              <h1 class="title">room*</h1>
+              <select>
+                <option value="0">1 room</option>
+                <option value="1">2 room</option>
+                <option value="2">3 room</option>
+                <option value="3">4 room</option>
+                <option value="4">5 room</option>
+              </select>
+            </div>
+          </div>
+          <a onClick="return false;" href="#" class="avaiable-btn"
+            >Check Avaiablability</a
+          >
+        </div>
+      </section>
+      <!-- about -->
+      <section id="about" class="about">
+        <div class="container">
+          <div class="box">
+            <div class="img">
+              <img src="./images/about-img-1.jpg" alt="" />
+            </div>
+            <div class="content">
+              <h1>Best Staff</h1>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
+                laborum maxime eius aliquid temporibus unde?
+              </p>
+              <a onclick="return false" href="#">Make A Reservation</a>
+            </div>
+          </div>
+          <div class="box box-fix">
+            <div class="content content-fix">
+              <h1>Best Foods</h1>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
+                laborum maxime eius aliquid temporibus unde?
+              </p>
+              <a onclick="return false" href="#">Make A Reservation</a>
+            </div>
+            <div class="img img-fix">
+              <img src="./images/about-img-2.jpg" alt="" />
+            </div>
+          </div>
+          <div class="box">
+            <div class="img">
+              <img src="./images/about-img-3.jpg" alt="" />
+            </div>
+            <div class="content">
+              <h1>Swimming Pool</h1>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
+                laborum maxime eius aliquid temporibus unde?
+              </p>
+              <a onclick="return false" href="#">Make A Reservation</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- services -->
+      <section id="services" class="services">
+        <div class="container">
+          <ul class="tabs">
+            <li class="item-tab active">Food & Drinks</li>
+            <li class="item-tab">Outdoor Dining</li>
+            <li class="item-tab">Beach View</li>
+            <li class="item-tab">Decorations</li>
+            <li class="item-tab">Swimming Pool</li>
+            <li class="item-tab">Resort Beach</li>
+          </ul>
+          <div class="card-container">
+            <div class="card-tab active">
+              <div class="img">
+                <img src="./images/icon-1.png" alt="" />
+              </div>
+              <h1>Food & Drinks</h1>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Libero, sunt?
+              </p>
+            </div>
+
+            <div class="card-tab">
+              <div class="img">
+                <img src="./images/icon-2.png" alt="" />
+              </div>
+              <h1>Food & Drinks</h1>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Libero, sunt?
+              </p>
+            </div>
+            <div class="card-tab">
+              <div class="img">
+                <img src="./images/icon-3.png" alt="" />
+              </div>
+              <h1>Food & Drinks</h1>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Libero, sunt?
+              </p>
+            </div>
+            <div class="card-tab">
+              <div class="img">
+                <img src="./images/icon-4.png" alt="" />
+              </div>
+              <h1>Food & Drinks</h1>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Libero, sunt?
+              </p>
+            </div>
+            <div class="card-tab">
+              <div class="img">
+                <img src="./images/icon-5.png" alt="" />
+              </div>
+              <h1>Food & Drinks</h1>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Libero, sunt?
+              </p>
+            </div>
+            <div class="card-tab">
+              <div class="img">
+                <img src="./images/icon-6.png" alt="" />
+              </div>
+              <h1>Food & Drinks</h1>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Libero, sunt?
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- reservation -->
+      <section class="reservation">
+        <div class="container">
+          <div class="reservation-container">
+            <h2>Make A Reversation</h2>
+            <div class="box">
+              <div class="item item-input">
+                <h1 class="title">check in*</h1>
+                <input type="date" placeholder="mm/dd/yy" id="" />
+              </div>
+              <div class="item item-input">
+                <h1 class="title">check out*</h1>
+                <input type="date" placeholder="mm/dd/yy" id="" />
+              </div>
+              <div class="item item-box">
+                <h1 class="title">adults*</h1>
+                <select>
+                  <option value="0">1 adult</option>
+                  <option value="1">2 adult</option>
+                  <option value="2">3 adult</option>
+                  <option value="3">4 adult</option>
+                  <option value="4">5 adult</option>
+                </select>
+              </div>
+              <div class="item item-box">
+                <h1 class="title">adults*</h1>
+                <select>
+                  <option value="0">1 child</option>
+                  <option value="1">2 child</option>
+                  <option value="2">3 child</option>
+                  <option value="3">4 child</option>
+                  <option value="4">5 child</option>
+                </select>
+              </div>
+              <div class="item item-box">
+                <h1 class="title">room*</h1>
+                <select>
+                  <option value="0">1 room</option>
+                  <option value="1">2 room</option>
+                  <option value="2">3 room</option>
+                  <option value="3">4 room</option>
+                  <option value="4">5 room</option>
+                </select>
+              </div>
+            </div>
+            <a onclick="return false" href="#">Check Avaiablability</a>
+          </div>
+        </div>
+      </section>
+      <!-- gallery -->
+      <section id="gallery" class="gallery">
+        <div class="container">
+          <div class="slider swiper">
+            <div class="swiper-wrapper">
+              <div class="img swiper-slide">
+                <img src="./images/gallery-img-1.jpg" alt="" />
+              </div>
+              <div class="img swiper-slide">
+                <img src="./images/gallery-img-2.webp" alt="" />
+              </div>
+              <div class="img swiper-slide">
+                <img src="./images/gallery-img-3.webp" alt="" />
+              </div>
+              <div class="img swiper-slide">
+                <img src="./images/gallery-img-4.webp" alt="" />
+              </div>
+              <div class="img swiper-slide">
+                <img src="./images/gallery-img-5.webp" alt="" />
+              </div>
+              <div class="img swiper-slide">
+                <img src="./images/gallery-img-6.webp" alt="" />
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- contact  -->
+      <section id="contact" class="contact">
+        <div class="container">
+          <div class="contact-container">
+            <div class="left">
+              <h1>send us message</h1>
+              <div class="input">
+                <input type="text" placeholder="enter your name" />
+                <input type="email" placeholder="enter your email" />
+                <input type="number" placeholder="enter your number" />
+                <textarea
+                  placeholder="enter your text"
+                  name=""
+                  id=""
+                  cols="20"
+                  rows="10"
+                ></textarea>
+              </div>
+              <a href="#" class="button">Send Message</a>
+            </div>
+            <div class="right">
+              <h1>Frequently Asked Questions</h1>
+              <div class="accordion">
+                <h2>how to cancel?</h2>
+                <div class="content">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Natus sunt aspernatur excepturi eos! Quibusdam, sapiente.
+                  </p>
+                </div>
+              </div>
+              <div class="accordion">
+                <h2>is there any vacancy?</h2>
+                <div class="content">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Natus sunt aspernatur excepturi eos! Quibusdam, sapiente.
+                  </p>
+                </div>
+              </div>
+              <div class="accordion">
+                <h2>what are payment methods?</h2>
+                <div class="content">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Natus sunt aspernatur excepturi eos! Quibusdam, sapiente.
+                  </p>
+                </div>
+              </div>
+              <div class="accordion">
+                <h2>what are payment methods?</h2>
+                <div class="content">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Natus sunt aspernatur excepturi eos! Quibusdam, sapiente.
+                  </p>
+                </div>
+              </div>
+              <div class="accordion">
+                <h2>what are the age requirements?</h2>
+                <div class="content">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Natus sunt aspernatur excepturi eos! Quibusdam, sapiente.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- review -->
+      <section id="review" class="review" id="review">
+        <div class="container">
+          <div class="swiper review-slider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide box">
+                <img src="images/pic-1.png" alt="" />
+                <h3>john deo</h3>
+                <p>
+                  Lorem ipsum dolor sit amet voluptates blanditiis optio
+                  dignissimos .
+                </p>
+              </div>
+              <div class="swiper-slide box">
+                <img src="images/pic-2.png" alt="" />
+                <h3>john deo</h3>
+                <p>
+                  Lorem ipsum dolor sit amet voluptates blanditiis optio
+                  dignissimos .
+                </p>
+              </div>
+              <div class="swiper-slide box">
+                <img src="images/pic-3.png" alt="" />
+                <h3>john deo</h3>
+                <p>
+                  Lorem ipsum dolor sit amet voluptates blanditiis optio
+                  dignissimos .
+                </p>
+              </div>
+              <div class="swiper-slide box">
+                <img src="images/pic-4.png" alt="" />
+                <h3>john deo</h3>
+                <p>
+                  Lorem ipsum dolor sit amet voluptates blanditiis optio
+                  dignissimos .
+                </p>
+              </div>
+              <div class="swiper-slide box">
+                <img src="images/pic-5.png" alt="" />
+                <h3>john deo</h3>
+                <p>
+                  Lorem ipsum dolor sit amet voluptates blanditiis optio
+                  dignissimos .
+                </p>
+              </div>
+              <div class="swiper-slide box">
+                <img src="images/pic-6.png" alt="" />
+                <h3>john deo</h3>
+                <p>
+                  Lorem ipsum dolor sit amet voluptates blanditiis optio
+                  dignissimos .
+                </p>
+              </div>
+            </div>
+            <!-- 
+            <div class="swiper-pagination"></div> -->
+          </div>
+        </div>
+      </section>
+      <!-- footer -->
+      <section class="footer">
+        <div class="container">
+          <div class="box-container">
+            <div class="box">
+              <a href="tel:1234567890"
+                ><i class="fas fa-phone"></i> +123-456-7890</a
+              >
+              <a href="tel:1112223333"
+                ><i class="fas fa-phone"></i> +111-222-3333</a
+              >
+              <a href="mailto:shakhanas@gmail.com"
+                ><i class="fas fa-envelope"></i> shakhanas@gmail.com</a
+              >
+              <a href="#"
+                ><i class="fas fa-map-marker-alt"></i> mumbai, india - 400104</a
+              >
+            </div>
+
+            <div class="box">
+              <a href="#home">home</a>
+              <a href="#about">about</a>
+              <a href="#reservation">reservation</a>
+              <a href="#gallery">gallery</a>
+              <a href="#contact">contact</a>
+              <a href="#reviews">reviews</a>
+            </div>
+
+            <div class="box">
+              <a href="#">facebook <i class="fab fa-facebook-f"></i></a>
+              <a href="#">twitter <i class="fab fa-twitter"></i></a>
+              <a href="#">instagram <i class="fab fa-instagram"></i></a>
+              <a href="#">linkedin <i class="fab fa-linkedin"></i></a>
+            </div>
+          </div>
+
+          <div class="credit">
+            &copy; copyright @ 2022 by mr. web designer | all rights reseved!
+          </div>
+          <a href="#" class="scroll-top"
+            ><i class="fa-solid fa-arrow-up"></i
+          ></a>
+        </div>
+      </section>
+    </div>
+
+    <!-- javascript -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="./script.js"></script>
+    <script>
+      var swiper = new Swiper(".slider", {
+        loop: true,
+        effect: "coverflow",
+        slidesPerView: "auto",
+        centeredSlides: true,
+        grabCursor: true,
+        coverflowEffect: {
+          rotate: 0,
+          stretch: 0,
+          depth: 100,
+          modifier: 2,
+          slideShadows: true,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+        },
+      });
+    </script>
+    <!-- swiper -->
+    <script>
+      var swiper = new Swiper(".home-slider", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+    <!-- review -->
+    <script>
+      var swiper = new Swiper(".review-slider", {
+        loop: true,
+        slidesPerView: "auto",
+        spaceBetween: 20,
+        breakpoints: {
+          315: {
+            slidesPerView: 1,
+          },
+          414: {
+            slidesPerView: 1,
+          },
+          1200: {
+            slidesPerView: 2,
+          },
+        },
+      });
+    </script>
+  </body>
+</html>

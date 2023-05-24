@@ -1,0 +1,28 @@
+.wrapper {
+  .review {
+    margin-top: 60px;
+    .container {
+      .review-slider {
+        .box {
+          text-align: center;
+          img {
+            border-radius: 50%;
+            margin: 0 auto;
+            max-width: 80px;
+            max-height: 80px;
+          }
+          h3 {
+            @include title();
+            margin-top: 30px;
+            font-size: 20px;
+          }
+          p {
+            font-size: 14px;
+            color: $sub-color;
+            margin-top: 30px;
+          }
+        }
+      }
+    }
+  }
+}

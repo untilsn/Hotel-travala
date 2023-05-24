@@ -1,0 +1,96 @@
+.wrapper {
+  .reservation {
+    .container {
+      .reservation-container {
+        border: 1px solid $sub-color;
+        margin-top: 50px;
+        padding: 20px 16px 50px 16px;
+        h2 {
+          padding: 20px;
+          border-radius: 8px;
+          width: 100%;
+          background-color: $sub-color;
+          color: $main-color;
+          text-align: center;
+          font-size: 25px;
+          margin-top: 20px;
+        }
+        .box {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          justify-content: center;
+          align-items: center;
+          gap: 20px;
+          color: $sub-color;
+          margin-top: 50px;
+          margin-bottom: 50px;
+          .item {
+            color: white;
+            border-bottom: 1px solid $sub-color;
+            padding: 10px;
+            h1 {
+              color: $sub-color;
+              padding: 20px 0;
+              font-size: 20px;
+            }
+          }
+          .item-input {
+            input {
+              color: white;
+            }
+          }
+          .item-box {
+            select {
+              color: white;
+              background-color: $main-color;
+            }
+          }
+        }
+        a {
+          @include mainBtn();
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 394px) {
+  .wrapper {
+    .reservation {
+      .container {
+        .reservation-container {
+          .box {
+            display: flex;
+            flex-direction: column;
+            .item-input {
+              width: 100%;
+            }
+            .item-box {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .wrapper {
+    .reservation {
+      .container {
+        .reservation-container {
+          .box {
+            display: flex;
+            flex-direction: column;
+            .item-input {
+              width: 100%;
+            }
+            .item-box {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}

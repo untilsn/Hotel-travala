@@ -1,0 +1,154 @@
+.wrapper {
+  .header {
+    .container {
+      .overlay {
+        position: fixed;
+        inset: 0;
+        background-color: black;
+        opacity: 0.5;
+        z-index: 10;
+        display: none;
+      }
+      .top {
+        padding: 20px 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        h1 {
+          font-size: 30px;
+          color: $sub-color;
+          font-weight: 400;
+        }
+        span {
+          display: none;
+          font-size: 25px;
+          color: $sub-color;
+          cursor: pointer;
+        }
+        a {
+          @include mainBtn();
+        }
+      }
+      .navigation {
+        padding: 0 10px;
+        z-index: 100;
+        span {
+          font-size: 30px;
+          color: $main-color;
+          display: none;
+        }
+        .navigation-list {
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+          padding: 10px 0;
+          background-color: $sub-color;
+          border-radius: 10px;
+          a {
+            color: $main-color;
+            padding: 12px 14px;
+            border-radius: 10px;
+            &:hover {
+              background-color: $main-color;
+              color: $sub-color;
+            }
+          }
+        }
+      }
+      .mid {
+        margin-top: 40px;
+        .home-slider {
+          .box {
+            img {
+              height: 40rem;
+              width: 100%;
+            }
+            .flex {
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              margin-top: 30px;
+              h3 {
+                @include title();
+              }
+              a {
+                @include mainBtn();
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 415px) {
+  .wrapper {
+    .header {
+      .container {
+        .top {
+          h1 {
+            font-size: 20px;
+          }
+          span {
+            display: block;
+          }
+          .button {
+            display: none;
+          }
+        }
+
+        .navigation {
+          position: fixed;
+          transform: translateX(100%);
+          right: 0;
+          top: 0;
+          bottom: 0;
+          width: 260px;
+          background-color: $sub-color;
+          span {
+            display: block;
+            display: flex;
+            justify-content: end;
+            i {
+              padding: 20px;
+            }
+          }
+          .navigation-list {
+            padding: 0;
+            margin-top: 40px;
+            color: $main-color;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            a {
+              color: black;
+              font-size: 20px;
+              z-index: 99;
+            }
+          }
+        }
+        .navigation.active {
+          transform: none;
+        }
+        .mid {
+          margin-top: 40px;
+
+          .home-slider {
+            .box {
+              img {
+                height: 20rem;
+              }
+              .flex {
+                h3 {
+                  font-size: 20px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,59 @@
+.wrapper {
+  .services {
+    .container {
+      .tabs {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 900px;
+        border-radius: 10px;
+        border: 2px dashed $sub-color;
+        padding: 14px 18px;
+        margin: 70px auto;
+        color: $sub-color;
+        .item-tab.active {
+          background-color: $sub-color;
+          color: $main-color;
+        }
+        .item-tab {
+          cursor: pointer;
+          border-radius: 10px;
+          padding: 14px 14px;
+        }
+      }
+      .card-container {
+        .card-tab.active {
+          display: block;
+        }
+        .card-tab {
+          display: none;
+          text-align: center;
+          h1 {
+            @include title();
+            margin-top: 30px;
+          }
+          img {
+            margin: 0 auto;
+            margin-top: 40px;
+          }
+          p {
+            color: $sub-color;
+            margin-top: 30px;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 415px) {
+  .wrapper {
+    .services {
+      .container {
+        .tabs {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+    }
+  }
+}

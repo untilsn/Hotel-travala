@@ -1,0 +1,108 @@
+.wrapper {
+  .contact {
+    margin-top: 80px;
+    .container {
+      .contact-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+        .left {
+          border: 1px solid $sub-color;
+          border-radius: 8px;
+          padding: 20px;
+          max-height: 600px;
+          h1 {
+            @include title();
+            text-align: center;
+            color: $main-color;
+            background-color: $sub-color;
+            border-radius: 8px;
+            padding: 20px 0;
+            font-size: 20px;
+          }
+          .input {
+            margin-bottom: 60px;
+            margin-top: 40px;
+            display: flex;
+            flex-direction: column;
+            input {
+              border-bottom: 1px solid $sub-color;
+              padding: 20px 0;
+              color: $sub-color;
+              font-size: 20px;
+            }
+            textarea {
+              resize: none;
+              border-bottom: 1px solid $sub-color;
+              padding: 20px 0;
+              color: $sub-color;
+              font-size: 20px;
+              height: 150px;
+            }
+          }
+          .button {
+            @include mainBtn();
+            display: flex;
+            justify-content: center;
+          }
+        }
+        .right {
+          h1 {
+            @include title();
+            font-size: 25px;
+            text-align: center;
+            padding: 20px 0;
+          }
+          .accordion {
+            h2 {
+              @include title();
+              padding: 20px 10px;
+              font-size: 20px;
+              background-color: $sub-color;
+              border-radius: 8px;
+              color: $main-color;
+              margin-top: 20px;
+              &.active {
+                border-bottom-left-radius: 0;
+                border-bottom-right-radius: 0;
+              }
+            }
+
+            .content {
+              height: 0;
+              border-radius: 8px;
+              overflow: hidden;
+              transition: all 0.1s ease-in-out;
+              border: 0px solid $sub-color;
+              p {
+                overflow: hidden;
+                padding: 20px;
+                color: $sub-color;
+                line-height: 1.8;
+                // &.active {
+                //   border-radius: 0 0 8px 8px;
+                // }
+              }
+              &.active {
+                border-radius: 0 0 8px 8px;
+                border: 1px solid $sub-color;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 415px) {
+  .wrapper {
+    .contact {
+      .container {
+        .contact-container {
+          display: flex;
+          flex-direction: column;
+        }
+      }
+    }
+  }
+}
